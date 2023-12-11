@@ -11,7 +11,7 @@ public class Lab10 {
     public static void main(String[] args) {
 
         // Path to the maze file.
-        File file = new File("/example/file/path.txt");
+        File file = new File("/Users/louisgrennell/Documents/GitHub/Lab10/src/Maze4.txt");
 
         // Number of lives (moves allowed) in the game.
         int lives = 200;
@@ -70,6 +70,8 @@ public class Lab10 {
         while (lives > 0) {
             System.out.println("Current position: " + posX + " " + posY);
 
+            System.out.println();
+
             // Print the current state of the maze.
             for (int i = 0; i < MAZE_SIZE; i++) {
                 for (int j = 0; j < MAZE_SIZE; j++) {
@@ -108,9 +110,15 @@ public class Lab10 {
 
             lives--; // Decrease life count after each move.
 
+            System.out.println();
+
+            System.out.println("Lives remaining: " + lives);
+
+            System.out.println("---------------------------------");
+
             // Check if the exit is found.
             if (solver.isExit(posX, posY)) {
-                System.out.println("You found the exit at: " + posX + "," + posY);
+                System.out.println("You found the exit at: " + posX + "," + posY + " with " + lives + " lives remaining!");
                 System.exit(0);
             }
         }
