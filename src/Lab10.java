@@ -6,7 +6,7 @@ public class Lab10 {
     private static final int MAZE_SIZE = 20;
 
     public static void main(String[] args) {
-        File file = new File("/Users/louisgrennell/Documents/GitHub/Lab10/src/Maze1.txt");
+        File file = new File("/example/file/path.txt");
         int lives = 200;
         int posX = 0;
         int posY = 0;
