@@ -11,7 +11,7 @@ public class Lab10 {
     public static void main(String[] args) {
 
         // Path to the maze file.
-        File file = new File("/Users/louisgrennell/Documents/GitHub/Lab10/src/Maze4.txt");
+        File file = new File("/example/file/path.txt");
 
         // Number of lives (moves allowed) in the game.
         int lives = 200;
